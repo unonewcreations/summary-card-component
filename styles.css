@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  /* color primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* color neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /* font family */
+  --body-family: "Red Hat Display", sans-serif !important;
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: var(--pale-blue);
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 0 7px 30px -10px var(--dark-blue);
+    background-color: var(--very-pale-blue);
+    border-radius: 25px;
+  }
+
+  /* card image */
+  .card-img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  /* order text */
+  .order-summary {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .order-summary-text-1 {
+    font-weight: 900;
+    margin: 25px auto;
+    font-size: 1.5rem;
+    font-family: var(--body-family);
+  }
+
+  .order-summary-text-2 {
+    font-family: var(--body-family);
+    color: gray;
+    line-height: 1.6;
+    width: 275px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* plan box */
+  .annual-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 275px;
+    margin: 0 auto;
+  }
+
+  .annual-plan-img {
+    margin: 16px 16px;
+  }
+
+  .plan-box {
+    margin: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .annual-plan-text {
+    font-family: var(--body-family);
+  }
+
+  .annual-plan-price {
+    font-family: var(--body-family);
+  }
+
+  .annual-plan-link {
+    font-family: var(--body-family);
+  }
+}
+
+.payment {
+}
+
+.class {
+}
+
+.attribution {
+}
