@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,40 +20,31 @@
 
     <title>Frontend Mentor | Order summary card</title>
   </head>
-
   <body>
-    <section class="container">
-      <section class="card">
-        <img src="/images/illustration-hero.svg" alt="hero" class="card-img" />
-
-        <section class="order-summary">
-          <h1 class="order-summary-text-1">Order Summary</h1>
-          <p class="order-summary-text-2">
+    <main class="container">
+      <div class="card">
+        <div class="card-content">
+          <img src="/images/illustration-hero.svg" alt="listening-to-music" />
+          <h1 class="titel">Order Summary</h1>
+          <h2 class="message">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
-          </p>
-        </section>
-
-        <section class="annual-plan">
-          <img src="/images/icon-music.svg" alt="" class="annual-plan-img" />
-          <div class="plan-box">
-            <p class="annual-plan-text">Annual Plan</p>
-            <p class="annual-plan-price">$59.99/year</p>
+          </h2>
+          <span>Annual Plan</span>
+          <span>$59.99/year</span>
+          <button class="change">Change</button>
+          <div class="button">
+            <button class="proceed">Proceed to Payment</button>
+            <button class="cancel">Cancel Order</button>
           </div>
-          <a href="" class="annual-plan-link">Change</a>
-        </section>
-
-        <button class="payment">Proceed to Payment</button>
-
-        <button class="cancel">Cancel Order</button>
-      </section>
-
-      <section class="attribution">
+        </div>
+      </div>
+      <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="www.unonew.com">Unonew | Creations</a>.
-      </section>
-    </section>
+        >. Coded by <a href="">Unonew | Creations</a>.
+      </div>
+    </main>
   </body>
 </html>
