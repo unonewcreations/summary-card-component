@@ -35,7 +35,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  background-image: url("/images/pattern-background-desktop.svg");
+  background-image: url("./images/pattern-background-desktop.svg");
   background-color: var(--primary-pale-blue);
   background-position: top;
   background-repeat: no-repeat;
