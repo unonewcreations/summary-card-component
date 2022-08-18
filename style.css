@@ -35,12 +35,12 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  background-image: url("https:./images/pattern-background-mobile.svg");
+  background-image: url("./images/pattern-background-mobile.svg");
   
   background-color: var(--primary-pale-blue);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   width: 1440px;
   height: 100vh;
 }
